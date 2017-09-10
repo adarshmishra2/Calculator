@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abhishekpc.mycalc.MainActivity"
+    android:background="@drawable/cal">
+
+    <TextView
+        android:id="@+id/operand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Number :"
+        android:textStyle="bold"
+        android:textColor="#FFC"
+        android:textSize="23dp"
+        android:layout_marginTop="42dp"
+        />
+    <TextView
+        android:id="@+id/operand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Number : "
+        android:textStyle="bold"
+        android:textColor="#FFC"
+        android:textSize="23dp"
+        android:layout_marginTop="92dp"
+        />
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="enter your 1st number"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentEnd="true"
+        />
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="enter your 2nd number"
+        android:layout_marginTop="82dp"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sub"
+        android:onClick="onButtonClick"
+        android:layout_marginLeft="15dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/sub"
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonsub"
+        android:layout_marginTop="152dp"
+        android:layout_toRightOf="@+id/add"
+
+        />
+    <Button
+        android:id="@+id/mul"
+        android:text="*"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonmul"
+        android:layout_marginTop="152dp"
+        android:layout_toRightOf="@+id/sub"
+
+        />
+    <Button
+        android:id="@+id/div"
+        android:text="/"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtondiv"
+        android:layout_marginTop="152dp"
+        android:layout_toRightOf="@+id/mul"
+
+        />
+
+    <Button
+        android:id="@+id/reshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result: "
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_marginTop="400dp"
+        />
+    <Button
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Your result will display here"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:layout_marginTop="397dp"
+        android:layout_toRightOf="@+id/reshow"
+        />
+</RelativeLayout>
